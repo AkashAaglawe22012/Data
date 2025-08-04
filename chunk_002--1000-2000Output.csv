@@ -1,0 +1,51 @@
+Data ID,Classification,Confidence Score,Detailed Justification
+D94,Warning,0.75,Meeting request with high metadata suspicious score (0.500), moderate exfiltration behavior (0.383), failed SPF. No malicious attachments or domains detected. Elevated risk due to metadata anomalies and authentication failure but lacks definitive malicious indicators.
+D95,Warning,0.70,Temporary email likelihood (0.558) indicates potential spam source, self-signed SSL certificate raises trust concerns. Low threat scores across behavioral analysis. Warning due to sender reputation and SSL issues without active malicious content.
+D96,No Action,0.85,Clean profile with no malicious indicators. All behavioral scores at zero, valid SSL certificate, no suspicious attachments. Failed DMARC but this alone insufficient for action. Legitimate email.
+D97,Malicious,0.88,Legal threat request type (social engineering), malicious attachment detected, YARA match, failed authentication checks. High sender name similarity to VIP (0.360) suggests impersonation. Clear phishing attempt with malware.
+D98,Malicious,0.90,Link click request with high sender domain reputation risk (0.430), domain known malicious, extremely high URL reputation risk (0.881). Pattern indicates phishing infrastructure directing to malicious site.
+D99,Spam,0.78,Bank detail update request from high sender reputation risk (0.717), expired SSL certificate, URL shortener detected. Social engineering attempt but lacks technical malicious indicators. Spam/scam classification.
+D100,Malicious,0.92,VPN/MFA reset request (credential theft), DMARC enforced, PowerShell parent process detected, macro-enabled document. High exfiltration behavior (0.883), valid SSL but clear credential harvesting attempt.
+D93,Spam,0.72,Sensitive data request with moderate temporary email likelihood, failed DMARC. No malicious attachments or behavioral indicators. Social engineering spam without technical threats.
+D94,Warning,0.73,Meeting request with temporary email (0.327), high exfiltration behavior (0.745), embedded file present. Mixed signals - suspicious but not definitively malicious.
+D95,Spam,0.76,High sender domain reputation risk (0.348), valid authentication but reply path differs from sender. Marketing/spam indicators without malicious payload.
+D96,Spam,0.79,Extremely high temporary email likelihood (0.871), domain tech stack mismatch. Clear spam from disposable email service without malicious intent.
+D97,Malicious,0.91,Legal threat with packer detected (obfuscated attachment), YARA match, IOC detected, unsubscribe link present (compromised marketing). High exfiltration behavior (0.944). Advanced malware delivery.
+D98,Warning,0.69,Link click request with minimal threat indicators, valid SSL and authentication. Slightly elevated behavioral scores. Potential phishing but insufficient evidence for malicious classification.
+D99,No Action,0.82,Bank detail update with clean technical profile, expired SSL certificate but otherwise legitimate. High domain reputation risk noted but no active threats.
+D100,Malicious,0.93,VPN/MFA reset with PowerShell parent process, 2 URLs detected, expired SSL, user marked as spam before. High exfiltration behavior (0.951). Confirmed credential theft attempt.
+D100,Malicious,0.89,VPN/MFA reset with executable attachment, revoked SSL certificate (serious trust issue), unsubscribe link. Pattern consistent with compromised infrastructure for credential theft.
+D81,Malicious,0.91,PowerShell parent process, high metadata suspicious score (0.883), 6 URLs detected, high exfiltration behavior (0.730). Clear indicators of multi-stage malware or data theft.
+D82,Spam,0.80,Invoice verification with extremely high temporary email (0.892), failed authentication. No malicious attachments or behavioral indicators. Invoice-themed spam.
+D83,Malicious,0.87,PowerShell parent process detected, extremely high behavioral sandbox score (0.744), expired SSL certificate. Command and control or malware delivery pattern.
+D84,Malicious,0.94,High sender domain reputation risk (0.564), PowerShell and RegSvr32 parent processes (known malware techniques), domain known malicious, extremely high exfiltration behavior (0.953). Advanced persistent threat.
+D85,No Action,0.81,Wire transfer request with self-signed SSL but otherwise clean profile. No malicious attachments, behavioral scores near zero. Insufficient risk for action.
+D86,Warning,0.67,High sender domain reputation risk (0.598), domain known malicious, but no active malicious content detected. Warning due to sender reputation without payload.
+D87,No Action,0.84,Clean profile with valid SSL, image only email detected but no malicious indicators. Marketing email likely.
+D88,Spam,0.77,High temporary email likelihood (0.630), URL shortener detected, domain known malicious. Spam from compromised or malicious infrastructure.
+D89,No Action,0.83,Gift card request but clean technical profile, valid SSL, no malicious indicators. Legitimate request despite suspicious theme.
+D90,Malicious,0.92,Wire transfer request with 3 malicious attachments, high sender domain reputation risk (0.699), self-signed SSL. Financial fraud with malware delivery.
+D91,Warning,0.74,Document download request with moderate metadata suspicious score (0.230), valid SSL but high spam content score (0.373). Suspicious but not confirmed malicious.
+D92,No Action,0.80,Clean profile with self-signed SSL certificate only concern. No behavioral indicators or malicious content. Safe email.
+D93,No Action,0.85,Sensitive data request with valid SSL and authentication. Very low threat scores throughout. Legitimate request.
+D94,Malicious,0.90,Meeting request with extremely high metadata suspicious score (0.815), high behavioral sandbox score (0.827), mismatch SSL certificate. Clear malware with spoofing.
+D95,Warning,0.71,High behavioral sandbox score (0.073) and sandbox execution time anomaly, revoked SSL certificate. Suspicious behavior but lower confidence in malicious intent.
+D96,Warning,0.68,Return path known malicious but otherwise clean profile. Valid SSL and no active threats. Warning due to infrastructure association.
+D97,Malicious,0.89,Legal threat with high behavioral sandbox score (0.088), extremely high behavioral sandbox score (0.826), valid SSL but clear social engineering with technical attack.
+D98,Malicious,0.88,Link click request with expired SSL certificate, extremely high execution time (265.1), high exfiltration behavior (0.550). Time-delayed malware pattern.
+D99,Warning,0.72,Bank detail update with high URL rendering behavior score (0.797), but valid SSL and clean attachments. Suspicious rendering behavior requires caution.
+D100,Warning,0.75,VPN/MFA reset with execution time anomaly (178.3), but low threat scores otherwise. Suspicious timing pattern without confirmed malicious activity.
+D93,Spam,0.73,Sensitive data request with domain tech stack mismatch, but valid SSL and clean behavioral profile. Social engineering spam.
+D94,Malicious,0.95,Meeting request from known malicious sender, high sender domain reputation risk (0.702), PowerShell detected. Confirmed malicious sender with active threat.
+D95,Malicious,0.86,High behavioral sandbox score (0.343), unsubscribe link with marketing keywords detected, high spam content (0.776). Compromised marketing delivering malware.
+D96,Warning,0.66,Return path known malicious, high sender domain reputation risk (0.427) but no active malicious content. Infrastructure concerns without payload.
+D97,Malicious,0.93,Legal threat with high metadata suspicious score (0.422), expired SSL certificate, domain known malicious, high spam content (0.640). Phishing with social engineering.
+D98,Malicious,0.94,Link click request from known malicious sender, high exfiltration behavior (0.934), valid SSL but clear malicious intent from sender verification.
+D99,No Action,0.83,Bank detail update with valid SSL, minimal threat scores. Clean behavioral profile. Legitimate financial communication.
+D100,Warning,0.76,VPN/MFA reset with self-signed SSL, moderate exfiltration behavior (0.503) but no other strong indicators. Credential theft attempt with lower confidence.
+D100,Malicious,0.91,VPN/MFA reset with high temporary email (0.648), expired SSL certificate, high exfiltration behavior (0.681). Clear credential harvesting infrastructure.
+D81,Malicious,0.93,Extremely high sender domain reputation risk (0.821), high temporary email (0.812), PowerShell detected, high behavioral sandbox score (0.258). Advanced attack pattern.
+D82,Spam,0.74,Invoice verification with self-signed SSL certificate, but clean behavioral profile. No malicious content. Invoice-themed spam.
+D83,Malicious,0.95,DMARC enforced, PowerShell parent process, 6 YARA matches, IOC detected, high metadata suspicious score (0.547), exploit pattern detected. Severe multi-vector attack.
+D84,Malicious,0.92,6 YARA matches, PowerShell and RegSvr32 processes, high behavioral sandbox score (0.720), 4 embedded files. Advanced persistent threat with multiple indicators.
+D85,No Action,0.86,Wire transfer request with high return path reputation risk (0.794) but valid SSL and clean behavioral profile. Legitimate despite reputation concern.
