@@ -1,0 +1,73 @@
+Data ID,Classification,Confidence Score,Detailed Justification
+D2792,Warning,0.84,Gift card request with domain threat, urgency keywords, and very high URL rendering score (0.68); potential social engineering
+D2793,Malicious,0.92,Multiple malicious attachments (3) with behavioral score (0.57) and wire transfer context; high confidence threat
+D2794,Malicious,0.89,High behavioral score (0.76) with document download context and suspicious behavioral patterns
+D2795,No Action,0.79,Low threat indicators with URL spoofing detected but no clear malicious signals
+D2796,Warning,0.81,Return path known malicious with sensitive data request context; requires monitoring
+D2797,Malicious,0.86,High attachment threat (0.02) with meeting request context and high URL rendering score (0.32)
+D2798,Malicious,0.91,Network call on open detected with high SMTP IP reputation (0.95) and image ratio concerns (1.1)
+D2799,No Action,0.83,Low threat indicators across all metrics; no significant malicious signals detected
+D2800,Malicious,0.94,DMARC enforced with IOC matches (2), very high execution time (68.7), and legal threat context
+D2801,Malicious,0.93,High attachment threat (0.23) with IOC matches (5), embedded files (2), domain threat, and link click context
+D2802,Warning,0.82,Reply path known malicious with bank detail update and high content spam score (0.42)
+D2803,Malicious,0.96,Very high attachment threat (0.68) with IOC matches (8), network call on open, VPN reset context, and image ratio (1.1)
+D2804,Malicious,0.88,Macro-enabled document with high content spam score (0.87) and VPN reset context
+D2805,Malicious,0.90,Packer detected with high AMSI score (0.55), embedded files (2), and behavioral patterns
+D2806,No Action,0.78,Invoice verification with low threat indicators; no significant malicious signals
+D2807,Malicious,0.93,High sender reputation (0.47) with macro-enabled document, very high content spam score (0.64), and high URL reputation (0.54)
+D2808,Malicious,0.94,High attachment threat (0.05) with very high execution time (21.8) and high content spam score (0.53)
+D2809,Warning,0.80,Wire transfer context with moderate sender reputation (0.15) and low threat indicators
+D2810,No Action,0.77,Low threat indicators across all metrics; no significant malicious signals detected
+D2811,Warning,0.79,Moderate sender reputation (0.13) with high urgency score (0.20) but low overall threats
+D2812,No Action,0.76,Low threat indicators with URL shortener detected but no clear malicious signals
+D2813,Warning,0.83,Gift card request with user marked as spam and moderate threat indicators
+D2814,Malicious,0.95,Very high attachment threat (0.63) with malicious attachment count (1), has executable attachment, high AMSI score (0.52), and wire transfer context
+D2815,Malicious,0.92,High attachment threat (0.32) with has executable attachment, very high content spam score (0.87), and document download context
+D2816,Warning,0.78,Moderate sender reputation (0.23) with high urgency score (0.04) and revoked SSL certificate
+D2817,Warning,0.82,High reply path reputation (0.67) with sensitive data request and moderate threat indicators
+D2818,Malicious,0.89,High attachment threat (0.03) with malicious attachment count (1), unscannable attachment, meeting request context
+D2819,Malicious,0.87,High attachment threat (0.05) with very high AMSI score (0.75), exploit detection, and high URL rendering (0.32)
+D2820,No Action,0.79,High spam likelihood (0.22) with very high SMTP IP reputation (0.80) but low threat indicators
+D2821,Malicious,0.88,High attachment threat (0.34) with legal threat context and embedded file detected
+D2822,Malicious,0.95,High attachment threat (0.03) with IOC matches (7), very high behavioral score (0.72), very high SMTP IP reputation (0.99), and link click context
+D2823,Warning,0.80,Bank detail update with very high SMTP IP reputation (0.95) but low overall threat indicators
+D2824,Malicious,0.91,Very high sender reputation (0.77) with high behavioral score (0.50) and very high content spam score (0.98)
+D2825,Warning,0.85,High sender reputation (0.33) with urgent callback context and very high content spam score (0.77)
+D2826,Malicious,0.93,DMARC enforced, packer detected, IOC match detected, with high attachment threat (0.05) and high URL rendering (0.29)
+D2827,Warning,0.81,Return path known malicious with high spam likelihood (0.36) and link click context
+D2828,Malicious,0.90,High attachment threat (0.09) with very high AMSI score (0.30) and high URL rendering (0.31)
+D2829,Malicious,0.86,Wire transfer context with high urgency score (0.29) and high SMTP IP reputation (0.57)
+D2830,Warning,0.82,Wire transfer context with high sender reputation (0.10) and very high content spam score (0.50)
+D2831,Malicious,0.96,High attachment threat (0.19) with exploit pattern detected, IOC matches (6), very high behavioral score (0.98), and gift card request
+D2832,Malicious,0.89,High attachment threat (0.03) with high AMSI score (0.26) and very high URL reputation (0.49)
+D2833,Malicious,0.94,Malicious file hash detected with very high attachment threat (0.85) and very high SMTP IP reputation (0.87)
+D2834,Warning,0.80,Invoice verification with user marked as spam but moderate threat indicators
+D2835,Malicious,0.95,DMARC enforced with high attachment threat (0.02), reply path known malicious, and very high URL rendering (0.99)
+D2836,Malicious,0.96,DMARC enforced with very high attachment threat (0.92), user marked as spam, and image ratio concerns (1.1)
+D2837,Warning,0.83,High sender reputation (0.51) with wire transfer request and moderate threat indicators
+D2838,No Action,0.76,Low threat indicators across all metrics; no significant malicious signals detected
+D2839,No Action,0.79,High spam likelihood (0.19) with high reply path reputation (0.68) but no clear threats
+D2840,Warning,0.81,Domain threat with user marked as spam and high content spam score (0.52)
+D2841,Warning,0.84,Very high spam likelihood (0.89) with reply path known malicious and gift card request context
+D2842,Malicious,0.87,Known malicious sender with high attachment threat (0.15) and wire transfer context
+D2843,Malicious,0.92,High attachment threat (0.28) with very high execution time (39.5), exploit detection, and document download context
+D2844,No Action,0.78,DMARC enforced with very high URL reputation (0.63) but low threat indicators
+D2845,Warning,0.82,High sender reputation (0.52) with sensitive data request and high content spam score (0.48)
+D2846,Malicious,0.88,High attachment threat (0.03) with network call on open and very high URL rendering (0.68)
+D2847,Malicious,0.95,Very high attachment threat (0.91) with multiple malicious attachments (2) and high behavioral score (0.67)
+D2848,Warning,0.81,High sender reputation (0.42) with high SMTP IP reputation (0.48) but no clear threats
+D2849,Malicious,0.97,Very high sender reputation (0.57) with return path mismatch, very high AMSI score (0.99), very high behavioral score (0.96), and legal threat context
+D2850,Malicious,0.93,Very high attachment threat (0.66) with IOC matches (2) and link click context
+D2851,Warning,0.82,Bank detail update with high SMTP IP reputation (0.59) and URL spoofing detected
+D2852,Malicious,0.86,High behavioral score (0.60) with VPN reset context and suspicious behavioral patterns
+D2853,Malicious,0.88,High attachment threat (0.25) with high behavioral score (0.63) and VPN reset context
+D2854,Malicious,0.95,Very high sender reputation (0.51) with very high attachment threat (0.37), has executable attachment, IOC match, high behavioral score (0.82)
+D2855,No Action,0.79,Invoice verification with moderate sender reputation (0.05) but low threat indicators
+D2856,Malicious,0.89,High AMSI score (0.28) with high behavioral score (0.56) and very high URL rendering (0.51)
+D2857,Malicious,0.90,Known malicious sender with high attachment threat (0.02) and high URL rendering (0.27)
+D2858,Warning,0.84,Wire transfer context with very high content spam score (0.85) and high URL rendering (0.72)
+D2859,Warning,0.82,User marked as spam with high URL rendering score (0.95) and moderate threat indicators
+D2860,No Action,0.78,High content spam score (0.30) but low threat indicators; no significant malicious signals
+D2861,Warning,0.83,Domain threat with final URL known malicious and high URL rendering (0.50)
+D2862,Warning,0.81,Gift card request with high spam likelihood (0.69) and moderate threat indicators
+D2863,Malicious,0.94,Very high attachment threat (0.98) with very high behavioral score (0.91) and wire transfer context

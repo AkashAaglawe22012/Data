@@ -1,0 +1,73 @@
+Data ID,Classification,Confidence Score,Detailed Justification
+D2576,No Action,0.79,Very low malicious indicators with self-signed certificate but invoice verification request suggests legitimate business communication despite authentication issues
+D2577,Malicious,0.91,High suspicious metadata (0.41) with very high exfiltration behavior (0.90) and PowerShell execution plus high-risk role targeting indicates targeted attack
+D2578,Malicious,0.93,High suspicious metadata (0.47) with VBScript detection and very high exfiltration behavior (0.77) plus known malicious reply path and multiple process executions
+D2579,Warning,0.73,Wire transfer request with moderate domain reputation but high URL rendering behavior (0.80) and link rewritten through redirector requires attention
+D2580,Warning,0.74,Final URL known malicious with certificate mismatch and moderate domain reputation requires monitoring despite low other indicators
+D2581,Warning,0.72,High temp email likelihood (0.95) with expired certificate and bulk message indicators suggest suspicious activity
+D2582,No Action,0.81,High content spam score (0.92) but QR code analysis positive and low overall malicious indicators suggest legitimate marketing email
+D2583,Spam,0.76,Gift card request with self-signed certificate and moderate domain reputation suggests spam pattern
+D2584,Malicious,0.86,High temp email likelihood (0.82) with wire transfer request and high-risk role targeting plus moderate behavioral scores
+D2585,Warning,0.77,Packer detected with macro-enabled document and moderate behavioral scores require investigation
+D2586,No Action,0.80,High temp email likelihood (0.19) but low overall malicious indicators and standard authentication issues
+D2587,Warning,0.75,High temp email likelihood (0.33) with sensitive data request and known malicious reply path plus self-signed certificate
+D2588,Warning,0.74,High-risk role targeting with meeting request and moderate suspicious metadata plus authentication failures
+D2589,Warning,0.73,DMARC enforcement with moderate sender reputation and embedded files but authentication failures
+D2590,Warning,0.71,High sender reputation (0.45) with moderate content spam score (0.50) but low other malicious indicators
+D2591,Malicious,0.89,High suspicious metadata (0.60) with multiple YARA matches (2) and legal threat social engineering plus expired certificate
+D2592,Malicious,0.94,High sender reputation (0.32) with executable attachment and very high AMSI suspicion (0.88) plus VBScript detection and link click request
+D2593,Warning,0.72,High content spam score (0.98) with bank detail update request but low overall malicious indicators
+D2594,Warning,0.74,VPN/MFA reset request with moderate behavioral scores and PowerShell execution
+D2595,Warning,0.71,Known malicious return path with wire transfer request and moderate domain reputation
+D2596,Malicious,0.90,High temp email likelihood (0.37) with very high exfiltration behavior (0.81) and gift card request plus multiple process executions
+D2597,Warning,0.73,Moderate behavioral scores with high content spam score (0.51) but low overall threat indicators
+D2598,Warning,0.76,High temp email likelihood (0.66) with moderate behavioral scores and PowerShell execution
+D2599,No Action,0.82,Low overall malicious indicators with invoice verification request and standard authentication issues
+D2600,Malicious,0.88,High suspicious metadata (0.62) with very high exfiltration behavior (0.68) and expired certificate
+D2601,Malicious,0.95,Any file hash malicious with packer detected and very high exfiltration behavior (0.92) plus multiple YARA matches and revoked certificate
+D2602,Warning,0.74,DMARC enforcement with wire transfer request and high content spam score (0.78) plus certificate mismatch
+D2603,Warning,0.72,High reply path reputation (0.67) with certificate mismatch and moderate domain reputation
+D2604,Warning,0.73,Known malicious return path with expired certificate requires monitoring
+D2605,No Action,0.81,DMARC enforcement with high content spam score (0.72) but low overall malicious indicators
+D2606,Spam,0.74,Gift card request with known malicious reply path but low overall threat indicators suggests spam
+D2607,Malicious,0.92,High sender reputation (0.39) with multiple YARA matches (5) and very high AMSI suspicion (0.98) plus expired certificate
+D2608,Malicious,0.89,Very high behavioral sandbox score (0.78) with document download request and self-signed certificate plus user marked as spam
+D2609,No Action,0.83,Very high sender reputation (0.92) with low overall malicious indicators despite authentication issues
+D2610,Warning,0.72,Sensitive data request with moderate sender reputation and authentication failures
+D2611,Malicious,0.87,Very high suspicious metadata (0.82) with high behavioral scores and meeting request plus self-signed certificate
+D2612,Warning,0.76,Macro-enabled document with moderate behavioral scores and exploit pattern detection
+D2613,Warning,0.71,Known malicious return path with moderate domain reputation and authentication failures
+D2614,Warning,0.75,DMARC enforcement with legal threat request and known malicious return path plus moderate behavioral scores
+D2615,Malicious,0.91,Very high sender reputation (0.97) with multiple YARA matches (8) and high suspicious metadata plus link click request
+D2616,Warning,0.72,Bank detail update with very high reply path reputation (0.96) but low overall malicious indicators
+D2617,Malicious,0.89,High suspicious metadata (0.59) with very high exfiltration behavior (0.99) and VPN/MFA reset plus certificate mismatch
+D2618,Malicious,0.90,High suspicious metadata (0.61) with high behavioral scores and unscannable attachment plus VPN/MFA reset and revoked certificate
+D2619,Malicious,0.86,Network call on open with high exfiltration behavior (0.49) and moderate suspicious metadata plus PowerShell execution
+D2620,Warning,0.74,DMARC enforcement with high sender reputation (0.59) but invoice verification request and moderate content spam score
+D2621,Warning,0.73,Known malicious reply path with moderate suspicious metadata and PowerShell execution
+D2622,Malicious,0.88,Very high exfiltration behavior (0.74) with multiple process executions and high URL reputation (0.25)
+D2623,Warning,0.72,High sender reputation (0.64) with wire transfer request and high temp email likelihood (0.30)
+D2624,No Action,0.80,Low overall malicious indicators with standard authentication issues and moderate sender reputation
+D2625,Warning,0.71,High temp email likelihood (0.38) with URL shortener detected and certificate mismatch
+D2626,Warning,0.72,High sender reputation (0.39) with high temp email likelihood (0.45) and final URL known malicious
+D2627,Spam,0.75,Sender spoof detected with gift card request and self-signed certificate plus user marked as spam and unsubscribe link
+D2628,Malicious,0.87,Multiple YARA matches (2) with wire transfer request and high URL reputation (0.74)
+D2629,Warning,0.76,High suspicious metadata (0.56) with document download request but low overall threat indicators
+D2630,No Action,0.82,DMARC enforcement with high sender reputation (0.32) and low overall malicious indicators
+D2631,Warning,0.73,Sensitive data request with expired certificate and moderate content spam score (0.66)
+D2632,Warning,0.75,High reply path reputation (0.71) with meeting request and expired certificate plus moderate behavioral scores
+D2633,Malicious,0.84,Known malicious sender with moderate behavioral scores and self-signed certificate
+D2634,No Action,0.80,Moderate sender reputation with self-signed certificate but low overall malicious indicators
+D2635,Malicious,0.88,Very high sender reputation (0.75) with high behavioral sandbox score (0.30) and legal threat request
+D2636,Malicious,0.90,Very high AMSI suspicion (0.77) with very high exfiltration behavior (0.98) and link click request
+D2637,Warning,0.71,Bank detail update with self-signed certificate and link rewritten through redirector
+D2638,Warning,0.76,High sender reputation (0.28) with unscannable attachment and VPN/MFA reset plus self-signed certificate
+D2639,No Action,0.79,Low overall malicious indicators with urgent callback request and standard authentication
+D2640,Warning,0.75,High sender reputation (0.43) with moderate behavioral scores and high content spam score (0.56)
+D2641,Warning,0.72,High temp email likelihood (0.23) with link click request and self-signed certificate
+D2642,Malicious,0.89,Multiple YARA matches (2) with very high exfiltration behavior (0.78) and high reply path reputation (0.85)
+D2643,Malicious,0.88,High suspicious metadata (0.29) with malicious attachment count (1) and very high AMSI suspicion (0.78) plus wire transfer and high-risk role targeting
+D2644,Warning,0.73,High return path reputation (0.73) with wire transfer request and moderate sender reputation
+D2645,Warning,0.75,High return path reputation (0.82) with gift card request and moderate behavioral scores plus certificate mismatch
+D2646,Warning,0.74,High suspicious metadata (0.25) with URL shortener detected and moderate behavioral scores
+D2647,Malicious,0.89,High suspicious metadata (0.35) with very high exfiltration behavior (0.94) and expired certificate plus high AMSI suspicion (0.41)

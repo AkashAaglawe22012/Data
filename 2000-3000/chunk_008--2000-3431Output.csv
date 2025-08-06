@@ -1,0 +1,73 @@
+Data ID,Classification,Confidence Score,Detailed Justification
+D2504,Warning,0.75,Multiple behavioral sandbox detections (0.15) with exploit patterns and high exfiltration behavior score (0.59) indicate suspicious activity but authentication passes limit malicious confidence
+D2505,Malicious,0.92,High malicious attachment count (1) combined with VBScript detection and very high exfiltration behavior (0.83) plus network calls on open indicate clear malicious intent
+D2506,Spam,0.68,High temp email likelihood (0.67) with moderate domain reputation issues and invoice verification request type suggests spam rather than targeted attack
+D2507,Warning,0.71,Moderate behavioral scores with PowerShell execution and some suspicious metadata but authentication partially passes
+D2508,Malicious,0.88,Very high suspicious metadata score (0.77) with PowerShell and regsvr32 execution indicating potential malware installation
+D2509,Spam,0.73,Wire transfer request type with authentication failures and moderate sender reputation suggests financial spam
+D2510,No Action,0.82,High sender domain reputation (0.95) with good SSL/TLS and no malicious indicators beyond basic authentication concerns
+D2511,No Action,0.79,Low overall risk scores with standard authentication failures that don't indicate malicious intent
+D2512,No Action,0.81,Very low malicious indicators across all categories with standard authentication issues only
+D2513,Spam,0.74,Gift card request type with authentication failures indicates typical spam pattern
+D2514,Malicious,0.85,Wire transfer request with VBScript detection and high exfiltration behavior combined with DMARC enforcement suggests targeted attack
+D2515,Malicious,0.89,Known malicious sender with high behavioral scores and network calls on open plus document download request
+D2516,Warning,0.72,High-risk role targeting with authentication failures and SSL certificate mismatch requires attention
+D2517,Warning,0.76,Sensitive data request type with multiple authentication failures and domain reputation concerns
+D2518,Malicious,0.91,Very high behavioral sandbox score (0.79) with URL count of 4 and expired certificate suggests malicious infrastructure
+D2519,Malicious,0.93,Very high exfiltration behavior (0.86) with self-signed certificate and extremely low URL reputation
+D2520,No Action,0.83,Moderate sender reputation with standard SSL issues but no significant malicious indicators
+D2521,Malicious,0.87,High behavioral scores (0.34/0.44) with legal threat social engineering and high exfiltration behavior (0.99)
+D2522,Malicious,0.84,DMARC enforcement with high exfiltration behavior (0.89) and link click request suggests targeted phishing
+D2523,Warning,0.71,High sender reputation (0.77) but bank detail update request with known malicious domain flag requires caution
+D2524,Warning,0.73,VPN/MFA reset request with moderate behavioral scores and authentication issues
+D2525,Malicious,0.91,High suspicious metadata (0.64) with VPN/MFA reset social engineering and very high return path malicious score (0.82)
+D2526,Malicious,0.94,Extremely high suspicious metadata (0.98) with high behavioral scores and URL count of 5
+D2527,No Action,0.84,Very low malicious indicators with standard authentication patterns and low risk scores
+D2528,Warning,0.74,Moderate behavioral scores with PowerShell execution but limited other risk factors
+D2529,Malicious,0.88,High malicious attachment count (6) with multiple process executions and expired certificate
+D2530,Spam,0.71,Wire transfer request with high content spam score (0.67) and authentication failures
+D2531,No Action,0.79,Moderate sender reputation with self-signed certificate but low overall malicious indicators
+D2532,No Action,0.81,Low malicious indicators with standard unsubscribe link and authentication issues
+D2533,Warning,0.73,Moderate sender reputation with authentication failures requires monitoring
+D2534,Spam,0.77,Gift card request with high content spam score (0.56) and unsubscribe link present
+D2535,Warning,0.78,VBScript detection with wire transfer request and very high behavioral sandbox score (0.83)
+D2536,Malicious,0.93,Extremely high suspicious metadata (0.83) with high content spam score and document download
+D2537,No Action,0.82,Low malicious indicators with standard authentication issues only
+D2538,Warning,0.74,High sender reputation (0.81) but sensitive data request with authentication concerns
+D2539,Warning,0.75,High malicious attachments (3) with meeting request but moderate behavioral scores
+D2540,Malicious,0.86,High sender reputation (0.68) but multiple malicious attachments (6) with high behavioral scores
+D2541,No Action,0.83,Very low malicious indicators across all categories
+D2542,Warning,0.76,Legal threat with moderate behavioral scores and high-risk role targeting
+D2543,Malicious,0.87,High exfiltration behavior (0.90) with exploit pattern detection and moderate behavioral scores
+D2544,No Action,0.79,Low overall risk with bank detail update but no significant malicious indicators
+D2545,Warning,0.75,VPN/MFA reset request with moderate behavioral scores and authentication issues
+D2546,Warning,0.71,High temp email likelihood (0.19) with urgent callback request and known malicious return path
+D2547,Malicious,0.85,High suspicious metadata (0.51) with DMARC enforcement and high URL reputation score (0.78)
+D2548,Warning,0.73,High sender reputation (0.59) with link click request but URL shortener detected
+D2549,Malicious,0.89,High behavioral scores with multiple process executions and very high sandbox execution time (21.7)
+D2550,Warning,0.76,Wire transfer request with multiple malicious attachments (3) and moderate behavioral scores
+D2551,Warning,0.74,High sender reputation with wire transfer request and marketing keywords but certificate mismatch
+D2552,Malicious,0.95,Very high suspicious metadata (0.86) with multiple YARA matches (2) and known malicious return path
+D2553,Warning,0.76,High temp email likelihood (0.82) with moderate behavioral scores and self-signed certificate
+D2554,Malicious,0.88,High suspicious metadata (0.80) with multiple YARA matches (2) and high temp email likelihood (0.60)
+D2555,Warning,0.72,High sender reputation with high content spam score (0.92) but low malicious indicators
+D2556,Warning,0.74,Moderate sender reputation with multiple YARA matches (2) and authentication failures
+D2557,Malicious,0.89,High suspicious metadata (0.56) with very high return path malicious score (0.95) and high URL reputation (0.58)
+D2558,Warning,0.71,Known malicious return path with wire transfer request requires attention
+D2559,No Action,0.82,Low overall malicious indicators with standard authentication issues
+D2560,Warning,0.73,High-risk role targeting with expired certificate and moderate domain reputation
+D2561,No Action,0.81,Low malicious indicators with standard authentication patterns
+D2562,Spam,0.74,Gift card request with low overall malicious indicators suggests spam pattern
+D2563,Malicious,0.87,High suspicious metadata (0.53) with multiple YARA matches (5) and wire transfer request plus marketing keywords
+D2564,Warning,0.75,High temp email likelihood (0.38) with document download request and authentication issues
+D2565,Warning,0.72,High temp email likelihood (0.55) with moderate domain reputation concerns
+D2566,Warning,0.73,High sender reputation with sensitive data request and self-signed certificate
+D2567,Warning,0.76,High suspicious metadata (0.43) with meeting request and high return path malicious score (0.56)
+D2568,Malicious,0.89,Very high suspicious metadata (0.79) with high behavioral scores and authentication failures
+D2569,No Action,0.79,Moderate sender reputation with low overall malicious indicators
+D2570,Malicious,0.86,Multiple YARA matches (4) with VBScript detection and legal threat social engineering plus known malicious reply path
+D2571,Warning,0.76,Executable attachment detected with link click request and high behavioral scores
+D2572,Warning,0.73,Bank detail update request with moderate domain reputation and authentication issues
+D2573,Warning,0.74,VPN/MFA reset request with moderate behavioral scores and authentication failures
+D2574,Malicious,0.88,High temp email likelihood (0.77) with high suspicious metadata (0.43) and VPN/MFA reset plus expired certificate
+D2575,Malicious,0.92,Very high behavioral sandbox score (0.99) with high suspicious metadata and QR code analysis positive for malicious content

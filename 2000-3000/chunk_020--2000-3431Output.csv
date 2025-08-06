@@ -1,0 +1,65 @@
+Data ID,Classification,Confidence Score,Detailed Justification
+D3368,Malicious,0.95,Extremely high metadata suspicious score (0.919) with macro-enabled document and VBScript/JavaScript detected. High exfiltration behavior (0.662) and winword.exe process confirm sophisticated malware delivery.
+D3369,Warning,0.75,4 URLs detected with extremely high spam score (0.975) and QR code present. Clean behavioral profile but mixed signals require verification before processing.
+D3370,Malicious,0.85,Legal threat with high metadata suspicious score (0.240) and extremely high AMSI score (0.682). Outlook.exe process and spam likelihood confirm BEC attack.
+D3371,Malicious,0.85,Link click request with high metadata suspicious score (0.293) and high behavioral sandbox score (0.156). Expired SSL and acrobat.exe process confirm credential harvesting attempt.
+D3372,Warning,0.75,Sender spoof detected with bank detail update and SSL mismatch. High sender reputation (0.828) but infrastructure concerns require verification.
+D3373,Malicious,0.90,VPN/MFA reset with high temp email likelihood (0.737) and bulk message indicator. High exfiltration behavior (0.343) and multiple processes confirm credential theft attempt.
+D3374,No Action,0.85,Sensitive data request with clean behavioral profile and valid SSL. Low threat scores and no malicious indicators confirm legitimate HR communication.
+D3375,Malicious,0.90,Meeting request with extremely high metadata suspicious score (0.520) and ActiveX objects detected. Expired SSL and high spam score (0.912) confirm sophisticated phishing.
+D3376,Malicious,0.90,Extremely high metadata suspicious score (0.563) with high exfiltration behavior (0.809) and high spam score (0.878). Winword.exe process confirms data theft attempt.
+D3377,Warning,0.70,Known malicious sender but clean behavioral profile and self-signed SSL. Low threat scores suggest false positive requiring verification through alternate channel.
+D3378,Malicious,0.95,Legal threat with extremely high metadata suspicious score (0.754) and high exfiltration behavior (0.806). Long execution time (12.3s) and outlook.exe process confirm sophisticated BEC malware.
+D3379,Malicious,0.90,Packer detected with extremely high behavioral sandbox score (0.973) and high exfiltration behavior (0.912). 1 URL detected and acrobat.exe process confirm advanced malware delivery.
+D3380,Spam,0.80,Bank detail update with extremely high spam score (0.667) but clean behavioral profile. Valid SSL suggests commercial spam rather than targeted fraud.
+D3381,Malicious,0.90,VPN/MFA reset with high metadata suspicious score (0.384) and extremely high exfiltration behavior (0.822). Self-signed SSL and multiple processes confirm credential theft.
+D3382,Malicious,0.85,VPN/MFA reset with malicious attachment count (1) and high temp email likelihood (0.301). Self-signed SSL and multiple processes confirm credential theft malware.
+D3383,Malicious,0.95,Known malicious sender with extremely high metadata suspicious score (0.921) and high exfiltration behavior (0.376). SSL mismatch and multiple processes confirm advanced malware.
+D3384,Warning,0.70,Invoice verification with expired SSL certificate and high site visual similarity (0.708). Image only email but clean behavioral profile requires verification.
+D3385,Malicious,0.85,4 IOCs detected with high temp email likelihood (0.789) and extremely high AMSI score (0.562). Multiple processes and behavioral patterns confirm malware delivery.
+D3386,Malicious,0.90,4 YARA rule matches with return path mismatch and bulk message indicator. Self-signed SSL and multiple processes including regsvr32.exe confirm sophisticated malware.
+D3387,Warning,0.75,Wire transfer with high sender reputation (0.125) and self-signed SSL. Clean behavioral profile but infrastructure concerns require verification.
+D3388,Warning,0.75,High sender reputation (0.755) with 1 URL detected but clean behavioral profile. Valid SSL and high site visual similarity (0.856) require verification.
+D3389,Warning,0.75,3 URLs detected with high temp email likelihood (0.145) and self-signed SSL. Clean behavioral profile but infrastructure concerns warrant monitoring.
+D3390,No Action,0.85,Clean behavioral profile with valid SSL and passing authentication. Low threat scores and no malicious indicators confirm legitimate communication.
+D3391,Spam,0.80,Gift card request with high spam score (0.107) and self-signed SSL. Clean behavioral profile suggests commercial spam rather than targeted fraud.
+D3392,Malicious,0.90,Known malicious sender with extremely high temp email likelihood (0.974) and VBScript/JavaScript detected. High behavioral sandbox score (0.601) confirms sophisticated fraud.
+D3393,Malicious,0.90,Document download with return path known malicious and high metadata suspicious score (0.231). Self-signed SSL and high spam score (0.781) confirm malware delivery.
+D3394,Warning,0.70,QR code present with failed authentication but clean behavioral profile. Valid SSL and low threat scores suggest verification needed before processing.
+D3395,Warning,0.75,Sensitive data request with QR code present and self-signed SSL. Image only email but clean behavioral profile requires verification.
+D3396,Malicious,0.85,Meeting request with high behavioral sandbox score (0.142) and extremely high exfiltration behavior (0.883). Expired SSL and 4 URLs confirm phishing attack.
+D3397,Malicious,0.85,High metadata suspicious score (0.433) with extremely high sender reputation (0.899) and high exfiltration behavior (0.280). Winword.exe process indicates compromised trusted domain.
+D3398,Warning,0.75,High sender reputation (0.643) with high temp email likelihood (0.162) but clean behavioral profile. Valid SSL suggests verification needed before processing.
+D3399,Malicious,0.90,Legal threat with high temp email likelihood (0.863) and QR code present. High exfiltration behavior (0.803) and outlook.exe process confirm sophisticated BEC attack.
+D3400,Malicious,0.95,DMARC enforced with packer detected and extremely high behavioral sandbox score (0.896). High spam scores (0.918, 0.784) and acrobat.exe process confirm advanced malware.
+D3401,Spam,0.80,Bank detail update with extremely high temp email likelihood (0.735) and high site visual similarity. Clean behavioral profile suggests commercial spam rather than fraud.
+D3402,Malicious,0.90,VPN/MFA reset with macro-enabled document and extremely high AMSI score (0.832). Final URL known malicious and multiple processes confirm credential theft malware.
+D3403,Warning,0.75,Sensitive data request with extremely high temp email likelihood (0.878) and high return path reputation (0.728). Clean behavioral profile but infrastructure concerns require verification.
+D3404,Malicious,0.90,Meeting request with VBScript/JavaScript detected and extremely high exfiltration behavior (0.884). High sender reputation (0.745) indicates compromised trusted domain for phishing.
+D3405,Malicious,0.85,YARA rule match with spam likelihood and QR code malicious. Multiple embedded files (3) and behavioral patterns confirm malware delivery.
+D3406,Warning,0.75,DMARC enforced with high spam score (0.563) and 3 URLs detected. Clean behavioral profile but infrastructure concerns require verification.
+D3407,Malicious,0.85,Packer detected with high metadata suspicious score (0.369) and QR code present. High exfiltration behavior (0.635) and outlook.exe process confirm BEC malware.
+D3408,Warning,0.80,Link click request with expired SSL certificate and long execution time (16.5s). Clean authentication but infrastructure concerns require verification.
+D3409,Warning,0.75,Bank detail update with high return path reputation (0.356) and 4 URLs detected. High site visual similarity (0.569) requires verification.
+D3410,Malicious,0.90,VPN/MFA reset with reply path known malicious and high behavioral sandbox score (0.427). High site visual similarity (0.409) confirms sophisticated phishing attack.
+D3411,Malicious,0.85,VPN/MFA reset with high metadata suspicious score (0.328) and final URL known malicious. High spam score (0.879) and multiple processes confirm credential theft.
+D3412,Malicious,0.85,QR code present with SSL mismatch and image only email. High site visual similarity (0.721) and multiple processes confirm sophisticated phishing with visual spoofing.
+D3413,Spam,0.80,Invoice verification with URL shortener detected and high spam score (0.443). Valid SSL but behavioral patterns indicate commercial spam rather than fraud.
+D3414,Malicious,0.95,7 malicious attachments with high metadata suspicious score (0.608) and high exfiltration behavior (0.615). High spam score (0.902) confirms sophisticated malware delivery.
+D3415,Malicious,0.85,High exfiltration behavior (0.715) with multiple processes including regsvr32.exe. Expired SSL and multiple embedded files (3) confirm malware delivery.
+D3416,Warning,0.75,Wire transfer with QR code present and high sender reputation (0.998). Clean authentication but infrastructure concerns require verification.
+D3417,Warning,0.75,6 URLs detected with high URL reputation score (0.835) but clean behavioral profile. Valid SSL suggests verification needed before processing.
+D3418,No Action,0.85,Final URL known malicious flag but clean behavioral profile and valid SSL. Low threat scores suggest false positive on URL reputation.
+D3419,No Action,0.80,High temp email likelihood (0.279) but clean behavioral profile and valid SSL. Low threat scores and no malicious indicators confirm legitimate communication.
+D3420,Spam,0.80,Gift card request with high URL reputation score (0.705) and clean behavioral profile. Valid SSL but behavioral patterns indicate commercial spam.
+D3421,Malicious,0.85,Wire transfer with malicious attachment count (1) and high metadata suspicious score (0.102). High site visual similarity (0.605) confirms fraud attempt.
+D3422,Malicious,0.85,Document download with exploit pattern detected and high behavioral sandbox score (0.402). High URL reputation score (0.924) confirms malware delivery.
+D3423,Warning,0.75,High temp email likelihood (0.675) with failed authentication trilogy but clean behavioral profile. Valid SSL requires verification before processing.
+D3424,Warning,0.70,Sensitive data request with extremely high temp email likelihood (0.302) and high return path reputation (0.888). Clean behavioral profile requires verification.
+D3425,Malicious,0.85,Meeting request with high metadata suspicious score (0.084) and high exfiltration behavior (0.403). SSL mismatch and behavioral patterns confirm phishing.
+D3426,Malicious,0.90,Return path known malicious with high sender reputation (0.719) and high spam score (0.475). High exfiltration behavior (0.532) indicates compromised trusted domain.
+D3427,Warning,0.70,Reply path differs from sender with self-signed SSL but clean behavioral profile. 1 URL detected requires verification through alternate channel.
+D3428,Malicious,0.90,Legal threat with high metadata suspicious score and QR code malicious. High site visual similarity (0.581) and outlook.exe process confirm sophisticated BEC attack.
+D3429,Malicious,0.95,Link click request with high metadata suspicious score (0.338) and extremely high AMSI score (0.990). Expired SSL and high exfiltration behavior (0.844) confirm credential harvesting.
+D3430,Warning,0.75,Bank detail update with high temp email likelihood (0.101) and image only email. Clean behavioral profile but visual cloaking requires verification.
+D3431,Malicious,0.90,VPN/MFA reset with packer detected, 3 malicious attachments, and macro-enabled document. Extremely high exfiltration behavior (0.956) confirms sophisticated credential theft malware.

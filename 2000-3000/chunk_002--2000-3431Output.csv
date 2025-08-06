@@ -1,0 +1,73 @@
+Data ID,Classification,Confidence Score,Detailed Justification
+D2072,Warning,0.74,Moderate risk with behavioral sandbox score and AMSI suspicion (0.513). Contains embedded file and winword.exe process. However, no malicious file hashes or high-risk indicators. DMARC fails but overall threat profile suggests caution rather than definitive malicious intent.
+D2073,No Action,0.88,Clean profile with no malicious attachments or suspicious behaviors. Good authentication with SPF pass and valid SSL. No executable attachments or exploit patterns detected. Low risk despite minimal spam indicators.
+D2074,Warning,0.81,Legal threat request with DMARC enforced and return path reputation issues (0.947). Contains outlook.exe process with embedded files. However, no malicious attachments detected. Social engineering attempt likely but lacks technical malware indicators.
+D2075,Malicious,0.92,High metadata suspicious score (0.873), AMSI score (0.646), macro-enabled document detected. Reply path known malicious with self-signed SSL. Link click request with acrobat.exe process indicates sophisticated phishing with malware delivery.
+D2076,No Action,0.83,Bank detail update request but clean technical profile. No malicious attachments or behaviors. SPF passes with valid SSL certificate. Financial request alone insufficient for malicious classification without supporting technical indicators.
+D2077,Warning,0.76,VPN/MFA reset request with expired SSL certificate and macro-enabled document. Contains suspicious processes but low actual threat scores. URL morphing detected. Possible credential theft attempt but inconclusive.
+D2078,Malicious,0.89,High metadata score (0.375), extreme AMSI score (0.819) with powershell.exe process. VPN/MFA reset attack vector. Failed DKIM with valid SSL but behavioral indicators confirm credential theft attempt.
+D2079,Warning,0.77,High metadata suspicious score (0.411) with powershell.exe but minimal other indicators. Failed SPF/DMARC. Suspicious but lacks strong malicious signals for definitive classification.
+D2080,No Action,0.82,Invoice verification with clean attachment profile. No malicious behaviors detected. Softfail SPF but valid SSL and no technical threats. Low risk business communication.
+D2081,Malicious,0.87,High temporary email likelihood (0.884) with DMARC enforced, embedded file, and suspicious processes. Expired SSL with high entropy score. Pattern indicates advanced phishing with obfuscation.
+D2082,Malicious,0.88,Self-signed SSL with extreme exfiltration score (0.881), embedded file, and multiple suspicious processes including regsvr32.exe. High spam likelihood confirms malware delivery attempt.
+D2083,Spam,0.78,Wire transfer request with self-signed SSL but no malicious attachments. Failed SPF/DKIM. Appears to be financial spam rather than sophisticated attack.
+D2084,Spam,0.75,Failed SPF with redirect chain length of 5 but no malicious content. Moderate spam indicators suggest bulk campaign rather than targeted threat.
+D2085,No Action,0.84,Clean profile with passing SPF and valid SSL. No malicious attachments or behaviors despite multiple URLs. Legitimate communication with good authentication.
+D2086,Spam,0.73,Failed SPF/DKIM with high temporary email likelihood but no malicious content. HTML text ratio indicates marketing/spam rather than malicious intent.
+D2087,No Action,0.80,Gift card request but clean technical indicators. SPF passes with valid SSL. No malicious attachments. Social engineering attempt lacks technical backing.
+D2088,Malicious,0.85,Wire transfer fraud with 6 YARA matches and embedded files. Contains winword.exe process with behavioral anomalies. Clear financial malware pattern.
+D2089,Warning,0.79,Document download with moderate threat scores and winword.exe process. SPF passes but behavioral indicators suggest potential early-stage attack.
+D2090,Warning,0.72,DMARC enforced with DNS morphing detected but no malicious attachments. Failed SPF/DMARC. Possible spoofing attempt but lacks payload.
+D2091,No Action,0.81,Sensitive data request with clean technical profile. SPF/DMARC pass with valid SSL. No malicious indicators despite request type.
+D2092,Malicious,0.94,File hash marked malicious with reply path known malicious. Revoked SSL certificate and high exfiltration score (0.699). Meeting request used as lure for malware delivery.
+D2093,Warning,0.82,Domain known malicious with 2 YARA matches but low actual threat scores. Embedded files present. Suspicious but not definitively malicious.
+D2094,Spam,0.76,Expired SSL with user previously marked as spam. No malicious attachments but poor sender reputation. Classic spam profile.
+D2095,Malicious,0.90,Self-signed SSL with high behavioral sandbox score and legal threat social engineering. Outlook.exe process with suspicious entropy. Advanced targeted attack confirmed.
+D2096,Warning,0.80,Link click request with expired SSL and moderate behavioral scores. Contains acrobat.exe but no definitive malicious indicators.
+D2097,Spam,0.82,Bank detail update with extremely high return path reputation issues (0.993) but no technical threats. Financial spam attempt.
+D2098,Warning,0.83,VPN/MFA reset with self-signed SSL and powershell.exe but low threat scores. User marked for marketing. Suspicious activity requiring investigation.
+D2099,Spam,0.77,Wire transfer with expired SSL but minimal technical indicators. Low-sophistication financial spam.
+D2100,Malicious,0.91,High metadata score (0.529) with gift card scam and multiple suspicious processes including regsvr32.exe. High spam score (0.890) confirms business email compromise.
+D2101,Malicious,0.86,7 YARA matches with embedded file and excel.exe process. High exfiltration score (0.451). Sophisticated attack with multiple stages.
+D2102,Warning,0.78,Expired SSL with moderate behavioral scores and powershell.exe. Suspicious but lacks definitive malicious indicators.
+D2103,Spam,0.80,Invoice verification with high spam score (0.543) but no malicious content. Appears to be spam misusing business context.
+D2104,Malicious,0.88,High temporary email likelihood (0.589) with 3 IOC counts and extreme exfiltration score (0.804). Embedded file with powershell.exe confirms attack.
+D2105,Malicious,0.93,Expired SSL with extreme exfiltration score (0.972), embedded file, and multiple suspicious processes including regsvr32.exe. Advanced persistent threat detected.
+D2106,Spam,0.74,Wire transfer with high return path reputation issues but no malicious attachments. Financial spam without technical sophistication.
+D2107,No Action,0.79,Clean profile with softfail SPF but no malicious indicators. Valid SSL with minimal risk factors.
+D2108,No Action,0.76,Failed SPF but otherwise clean security profile. No malicious attachments or behaviors detected.
+D2109,No Action,0.78,Failed SPF but clean attachment profile. Valid SSL with no suspicious behaviors or exploits.
+D2110,Spam,0.75,Gift card request with no technical threats but poor authentication. Low-quality scam attempt.
+D2111,Malicious,0.90,Wire transfer fraud with high metadata score (0.345), multiple URLs with shortener detected. Process anomalies confirm financial malware.
+D2112,Warning,0.82,Document download with softfail SPF and winword.exe process. Extreme exfiltration score (0.959) but minimal other indicators.
+D2113,Warning,0.71,Sender spoofing detected with unsubscribe link present. Failed SPF/DMARC but no malicious content. Impersonation attempt.
+D2114,No Action,0.77,Sensitive data request but clean technical profile. Failed SPF but no malicious indicators.
+D2115,Malicious,0.91,Sender marked malicious with high metadata score (0.472), AMSI score (0.617), and macro detected. Meeting request with failed authentication confirms spear phishing.
+D2116,Malicious,0.87,High sandbox execution time with 7 embedded files and multiple threat indicators. Failed SPF with permerror DMARC. Malware delivery confirmed.
+D2117,Warning,0.70,Domain marked malicious with self-signed SSL but minimal supporting evidence. Requires investigation.
+D2118,Malicious,0.85,Legal threat with network call on open detected, high behavioral scores. Failed DKIM with outlook.exe process indicates targeted attack.
+D2119,Malicious,0.89,Link click request with YARA match, IOC count, and embedded files. Self-signed certificate with acrobat.exe confirms phishing attack.
+D2120,Spam,0.79,Bank detail update with failed SPF but no malicious content. Appears to be financial spam.
+D2121,Malicious,0.88,High temporary email likelihood (0.718) with VPN/MFA reset request and powershell.exe. AMSI score (0.407) confirms credential theft attempt.
+D2122,Malicious,0.94,Extremely high metadata score (0.842) and AMSI score (0.818) with VPN/MFA reset. Powershell.exe with high entropy indicates advanced attack.
+D2123,Malicious,0.92,High behavioral sandbox score (0.745) with extreme exfiltration score (0.654). Softfail SPF with powershell.exe confirms sophisticated attack.
+D2124,Spam,0.81,Invoice verification with softfail SPF and high return path issues but no malicious content. Business spam.
+D2125,Malicious,0.86,Expired SSL with embedded file and multiple suspicious processes. High spam score with exfiltration behavior confirms attack.
+D2126,Malicious,0.93,Extremely high temporary email likelihood (0.839) with SSL mismatch and QR code marked malicious. Sophisticated phishing with multiple evasion techniques.
+D2127,Spam,0.72,Wire transfer with self-signed SSL but minimal technical threats. Low-quality financial spam.
+D2128,No Action,0.75,Failed SPF/DKIM but clean attachment profile. No malicious behaviors or exploits detected.
+D2129,Spam,0.83,High temporary email likelihood (0.576) with failed authentication but no malicious content. Typical spam profile.
+D2130,No Action,0.81,Failed DKIM but otherwise clean profile. No malicious attachments or suspicious behaviors.
+D2131,Spam,0.76,Gift card request with redirect chain but no technical threats. Classic scam pattern without sophistication.
+D2132,Malicious,0.84,Wire transfer with SMTP IP marked malicious and embedded files. Failed DMARC with behavioral indicators confirms fraud attempt.
+D2133,Malicious,0.90,Reply path known malicious with 2 YARA matches and document download request. High metadata score (0.302) confirms malware delivery.
+D2134,No Action,0.82,User marked for VPN/MFA but clean technical profile. No malicious attachments or behaviors detected.
+D2135,Warning,0.77,Sensitive data request with expired SSL but minimal other indicators. Social engineering attempt likely.
+D2136,Malicious,0.85,Return path known malicious with meeting request and 7 embedded files. Failed DMARC with suspicious processes confirms attack.
+D2137,Warning,0.79,Failed SPF/DKIM with moderate behavioral scores but no definitive malicious indicators.
+D2138,Warning,0.73,Self-signed SSL with failed SPF but minimal threat indicators. Suspicious but inconclusive.
+D2139,Malicious,0.95,2 malicious attachments with extremely high behavioral sandbox score (0.933). Expired SSL with legal threat indicates advanced persistent threat.
+D2140,Malicious,0.91,High behavioral sandbox score (0.453) with extreme exfiltration score (0.953). Self-signed SSL with link click attack vector confirms phishing.
+D2141,Warning,0.76,Bank detail update with self-signed SSL and unsubscribe link. Possible fraud attempt but lacks technical indicators.
+D2142,Malicious,0.89,5 YARA matches with high metadata score (0.359) and VPN/MFA reset request. Multiple suspicious processes confirm credential theft attack.
+D2143,Warning,0.74,Return path known malicious with sensitive data request but low actual threat scores. Historical threat actor possibly reformed.

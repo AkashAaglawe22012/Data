@@ -1,0 +1,73 @@
+Data ID,Classification,Confidence Score,Detailed Justification
+D2936,Malicious,0.85,Email shows high exfiltration behavior score (0.807) and has 3 malicious attachments with executable winword.exe process. Document download request type with SPF failure indicates phishing attempt to deliver malicious payload.
+D2937,No Action,0.90,Clean email with no malicious indicators. Good sender reputation (0.435), no attachments, SPF soft fail but DKIM fail is offset by low spam score and no suspicious URLs or content.
+D2938,No Action,0.85,Legitimate email with excellent sender reputation (0.827). Despite sensitive data request type, no malicious attachments or suspicious behaviors detected. All authentication checks pass.
+D2939,Warning,0.75,Meeting request with moderate risk indicators including high metadata suspicious score (0.253) and exfiltration behavior (0.450). Has embedded files and winword.exe process but no confirmed malicious attachments.
+D2940,Malicious,0.90,Packer detected with high behavioral sandbox score (0.629) and exfiltration behavior (0.810). SSL certificate is self-signed and site shows high visual similarity to known brand (0.414) indicating phishing attempt.
+D2941,No Action,0.95,Clean email from known malicious sender but all other indicators are benign. Excellent authentication (SPF/DKIM/DMARC pass), no attachments, minimal URLs, and very low threat scores across all metrics.
+D2942,Warning,0.70,Legal threat email with moderate behavioral sandbox score (0.663) and some suspicious indicators. Has unsubscribe link present suggesting possible legitimate marketing that uses aggressive tactics.
+D2943,Warning,0.65,Link click request with elevated scores but no critical threats. DMARC enforced, valid SSL certificate, and while showing some suspicious patterns, lacks definitive malicious indicators.
+D2944,No Action,0.80,Bank detail update request but with very low threat scores. SPF/DMARC failures are concerning but no malicious attachments, URLs, or behaviors detected. Likely legitimate but poorly configured.
+D2945,Malicious,0.85,VPN/MFA reset request with 6 authentication components detected malicious. Multiple suspicious processes (winword.exe, powershell.exe) and moderate exfiltration behavior (0.675) indicate credential theft attempt.
+D2946,Malicious,0.80,VPN/MFA reset attempt with behavioral issues (0.168 sandbox score) and exfiltration behavior (0.808). Multiple processes including powershell.exe suggest malicious activity despite low attachment count.
+D2947,Malicious,0.85,Has executable attachment with multiple suspicious processes (winword.exe, powershell.exe) and high exfiltration score (0.852). SSL mismatch and behavioral indicators confirm malicious intent.
+D2948,Spam,0.75,Invoice verification email with very high spam score (0.962). No malicious attachments but authentication issues and spam indicators suggest unwanted commercial email.
+D2949,Warning,0.70,Moderate risk with some suspicious metadata (0.140) and exfiltration behavior (0.793). Multiple processes detected but no confirmed malicious content. Monitor for escalation.
+D2950,Malicious,0.80,Multiple suspicious processes including regsvr32.exe (known for malware delivery), SSL mismatch, and moderate threat scores across multiple indicators suggest malware delivery attempt.
+D2951,No Action,0.85,Wire transfer request but with minimal risk indicators. Good sender reputation, no attachments, and clean behavioral analysis. Authentication passes suggest legitimate transaction email.
+D2952,No Action,0.90,Clean email with no concerning indicators. Excellent sender reputation, passes authentication checks, no attachments or suspicious URLs detected.
+D2953,No Action,0.85,Very low threat scores across all indicators. Minor authentication issues but no malicious content, behaviors, or attachments detected. Safe communication.
+D2954,Warning,0.65,Return path known malicious but other indicators are mixed. Self-signed SSL certificate is concerning but no malicious attachments or high-risk behaviors detected.
+D2955,Spam,0.70,Gift card request with marketing keywords detected. Failed authentication but no malicious attachments. SSL mismatch suggests possible spam/phishing hybrid.
+D2956,Malicious,0.90,Wire transfer fraud attempt with DMARC enforced but failing all authentication checks (SPF/DKIM/DMARC fail). Expired SSL certificate confirms fraudulent infrastructure.
+D2957,Malicious,0.85,Document download request with high sender reputation (0.790) but multiple red flags: 4 embedded files, expired SSL certificate (0.686), and authentication failures indicate sophisticated phishing.
+D2958,No Action,0.80,Despite poor sender reputation (0.699), no malicious indicators found. Clean behavioral analysis, valid SSL, and no dangerous attachments suggest legitimate but poorly maintained sender.
+D2959,No Action,0.85,Sensitive data request with very low threat scores. Some authentication issues (SPF fail) but no malicious content or behaviors detected. Likely legitimate HR communication.
+D2960,Warning,0.75,Meeting request with mixed signals. Good behavioral scores but concerning authentication gaps and moderate exfiltration behavior (0.868). Requires user verification.
+D2961,Warning,0.70,Has 4 authentication components malicious but otherwise clean profile. Return path reputation very high (0.808) suggests possible false positive. Monitor closely.
+D2962,No Action,0.90,Extremely clean profile with near-zero threat scores across all indicators. Full authentication pass and no suspicious content detected.
+D2963,Malicious,0.95,Legal threat with high exfiltration behavior (0.940), malicious domain detected, and URL shortener usage. Classic CEO fraud/BEC attack pattern attempting urgency manipulation.
+D2964,Malicious,0.85,Link click request with 4 total yara matches and high exfiltration score (0.846). Revoked SSL certificate and suspicious behavioral patterns confirm phishing attempt.
+D2965,No Action,0.85,Bank detail update with generally clean profile. Good authentication, valid SSL, and no malicious attachments. Moderate spam score but likely legitimate financial communication.
+D2966,Malicious,0.90,VPN/MFA reset with macro-enabled document detected and self-signed SSL. Suspicious processes and SMTP known malicious confirm credential theft attempt.
+D2967,Warning,0.75,Wire transfer request with self-signed SSL (0.669) and elevated site similarity to known brand (0.614). No malicious attachments but infrastructure concerns warrant caution.
+D2968,Malicious,0.90,Gift card scam with executable attachment, multiple suspicious processes (including regsvr32.exe), and exploit pattern detected. Classic gift card fraud indicators.
+D2969,Warning,0.80,Mixed signals with good exfiltration score but unsubscribe link present and moderate suspicious scores. Possible legitimate email with poor security configuration.
+D2970,Malicious,0.85,ActiveX objects detected with high spam score indicators. Network call on open behavior suggests malware attempting to establish C2 communication.
+D2971,No Action,0.85,Invoice verification with clean behavioral profile. Good authentication (SPF/DKIM pass) and valid SSL certificate. No malicious indicators detected.
+D2972,Malicious,0.95,Extremely high suspicious metadata score (0.979) with multiple embedded files and self-signed SSL. Behavioral analysis shows clear malicious intent.
+D2973,Malicious,0.85,Multiple suspicious processes including regsvr32.exe with high exfiltration behavior (0.906). Authentication failures and elevated threat scores confirm malware delivery.
+D2974,No Action,0.80,Wire transfer request with moderate reputation but clean behavioral analysis. Valid SSL and no malicious attachments suggest legitimate transaction email.
+D2975,No Action,0.85,Very clean profile with minimal threat indicators. HTML/text ratio normal, authentication failures but no malicious content detected.
+D2976,Warning,0.75,High sender temp email likelihood (0.839) with unsubscribe link present. SSL mismatch but no malicious attachments. Likely unwanted marketing email.
+D2977,Warning,0.65,Return path known malicious but otherwise moderate risk profile. Valid SSL and no high-threat behaviors detected. Monitor for escalation.
+D2978,No Action,0.80,Gift card request but with very low threat scores and no malicious indicators. Valid SSL and clean behavioral analysis suggest legitimate request.
+D2979,Malicious,0.95,Wire transfer fraud with DMARC enforced, malicious attachment present, and high behavioral sandbox score (0.407). Self-signed SSL and QR code detected confirm sophisticated attack.
+D2980,Malicious,0.90,Document download request with high sandbox scores (0.319 and 0.721) indicating malware. High exfiltration behavior (0.906) confirms data theft attempt.
+D2981,No Action,0.85,Clean email with domain known malicious flag but all other indicators normal. Valid SSL and no suspicious behaviors suggest false positive on domain reputation.
+D2982,Warning,0.70,Sensitive data request with high sender temp email likelihood (0.586). Some concerning scores but no malicious attachments or high-risk behaviors.
+D2983,Malicious,0.85,Meeting request with 5 YARA rule matches and return path known malicious. Self-signed SSL certificate and suspicious metadata confirm phishing attempt.
+D2984,Malicious,0.90,High metadata suspicious score (0.246) with URL shortener detected and high exfiltration behavior (0.854). Clear indicators of malware delivery attempt.
+D2985,No Action,0.85,Clean email with good overall profile. Minor authentication issues but valid SSL and no malicious content detected. Safe communication.
+D2986,Malicious,0.95,Legal threat with malicious file hash detected, 6 authentication components malicious, and expired SSL certificate. Classic BEC attack with high confidence.
+D2987,Malicious,0.95,Link click request with DMARC enforced, extremely high suspicious metadata (0.902), and malicious reply path. Clear phishing attack targeting credentials.
+D2988,No Action,0.80,Bank detail update with low threat scores throughout. Valid SSL and no malicious attachments. Likely legitimate financial communication.
+D2989,Malicious,0.85,VPN/MFA reset with suspicious processes and high domain known malicious score (0.889). Valid SSL but behavioral patterns indicate credential theft.
+D2990,Malicious,0.90,VPN/MFA reset with extremely high metadata score (0.942) and 4 embedded files. TLS version 0 (no encryption) confirms malicious infrastructure.
+D2991,Malicious,0.85,File hash malicious with reply path known malicious. Self-signed SSL and suspicious processes confirm malware delivery despite low individual scores.
+D2992,Warning,0.75,Invoice verification with high sender temp email likelihood (0.763). Valid SSL but some authentication issues. Possible spam with low malicious confidence.
+D2993,Malicious,0.90,High sender temp email likelihood (0.745) with behavioral sandbox issues and self-signed SSL. Exfiltration behavior (0.813) confirms data theft attempt.
+D2994,Malicious,0.95,Extremely high metadata suspicious score (0.836) with bulk message indicator. SSL mismatch and suspicious processes confirm sophisticated malware.
+D2995,No Action,0.80,Wire transfer request with moderate reputation scores. Expired SSL is concerning but no malicious attachments or behaviors detected.
+D2996,No Action,0.85,Very high return path reputation (0.539) with 4 URL links but all showing safe indicators. Valid SSL and clean behavioral analysis.
+D2997,Warning,0.75,High sender reputation (0.808) but unsubscribe link present and self-signed SSL. Mixed signals suggest possible legitimate marketing with poor security.
+D2998,No Action,0.85,Extremely low threat scores across all indicators. Valid SSL and clean authentication suggest safe communication despite minor spam score.
+D2999,Spam,0.80,Gift card request with return path known malicious. High site visual similarity (0.612) suggests brand impersonation but no malicious attachments.
+D3000,Malicious,0.95,Wire transfer fraud with high suspicious metadata (0.580) and extremely high sandbox execution time (16.38). Clear indicators of time-delayed malware.
+D3001,Warning,0.80,Document download with unsubscribe link present but otherwise moderate risk. Valid SSL but authentication issues warrant caution.
+D3002,No Action,0.90,Sender known malicious but all other indicators extremely clean. Self-signed SSL but no malicious behaviors or content detected. Likely false positive.
+D3003,No Action,0.85,Sensitive data request with very low threat scores throughout. SSL mismatch but valid certificate and no malicious indicators suggest legitimate communication.
+D3004,Malicious,0.85,Meeting request with high sender temp email likelihood (0.455) and unsubscribe link. High sandbox execution time (6.64) indicates time-delayed payload.
+D3005,Malicious,0.90,High suspicious metadata (0.642) with return path known malicious (0.671). Domain reputation extremely poor (0.514) confirming malicious sender.
+D3006,No Action,0.85,Clean email with very low threat scores. Valid SSL and normal behavioral patterns. No malicious indicators detected.
+D3007,Malicious,0.90,Legal threat with bulk message indicator and moderate exfiltration scores. Outlook.exe process with visual brand similarity suggests targeted phishing attack.

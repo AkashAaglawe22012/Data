@@ -1,0 +1,73 @@
+Data ID,Classification,Confidence Score,Detailed Justification
+D2432,Malicious,0.92,Sender spoofing detected with high AMSI score (0.135) and extremely high exfiltration score (0.746). VPN/MFA reset request with multiple suspicious processes including winword.exe and powershell.exe confirms credential theft attack.
+D2433,Malicious,0.89,High metadata score (0.371) with high behavioral score (0.182) and high AMSI score (0.228). Failed DKIM/DMARC authentication with multiple suspicious processes confirms advanced attack.
+D2434,Spam,0.77,Invoice verification request with high content spam score (0.444) and failed DKIM/DMARC authentication. Clean attachment profile indicates business context spam.
+D2435,Malicious,0.91,High metadata score (0.242) with extremely high AMSI score (0.616) and high exfiltration score (0.297). Multiple suspicious processes with malicious QR code confirms advanced attack.
+D2436,Malicious,0.88,High exfiltration score (0.628) with unscannable attachment and multiple suspicious processes including regsvr32.exe. Failed authentication with self-signed SSL confirms evasion attack.
+D2437,Spam,0.76,Wire transfer request with SSL mismatch and failed SPF authentication. High site visual similarity (0.531) indicates financial spam without advanced threats.
+D2438,Warning,0.75,Expired SSL certificate with failed DMARC authentication. Clean attachment profile but SSL and authentication concerns require investigation.
+D2439,Warning,0.79,Return path known malicious with high temporary email likelihood (0.294) and failed SPF/DKIM. Authentication inconsistencies require investigation.
+D2440,No Action,0.84,Legitimate business communication with clean attachment profile and secure TLS 1.3 connection. Standard SPF/DKIM authentication confirms authorized correspondence.
+D2441,Spam,0.81,Gift card request with extremely high content spam score (0.726) and self-signed SSL. DMARC temperror with multiple links indicates spam campaign.
+D2442,Malicious,0.87,High behavioral score (0.492) with high exfiltration score (0.365) and wire transfer request. Expired SSL with failed authentication confirms financial attack.
+D2443,Malicious,0.93,High metadata score (0.157) with high behavioral score (0.615) and extremely high exfiltration score (0.995). Document download with user marked as spam confirms sophisticated attack.
+D2444,Warning,0.78,High temporary email likelihood (0.126) with failed DMARC authentication. Clean attachment profile but authentication concerns require investigation.
+D2445,Warning,0.76,Sensitive data request with failed SPF authentication and multiple links (3). Clean attachment profile but authentication failures require investigation.
+D2446,Malicious,0.89,High metadata score (0.491) with high exfiltration score (0.416) and meeting request. Failed SPF authentication confirms spear-phishing attack.
+D2447,Malicious,0.88,Extremely high exfiltration score (0.684) with embedded file and high content spam score (0.440). Failed DKIM authentication confirms advanced attack.
+D2448,Warning,0.77,DMARC enforced with failed SPF/DKIM and multiple links (4). Clean attachment profile but authentication failures require investigation.
+D2449,Malicious,0.91,Extremely high AMSI score (0.683) with high exfiltration score (0.574) and legal threat. Failed SPF authentication confirms targeted attack.
+D2450,Malicious,0.92,Extremely high metadata score (0.739) with high temporary email likelihood (0.404) and embedded file. Link click request confirms advanced phishing attack.
+D2451,Warning,0.80,DMARC enforced with high temporary email likelihood (0.200) and bank detail update. Failed SPF/DKIM authentication requires investigation.
+D2452,Malicious,0.91,High metadata score (0.200) with high IOC count (10) and high exfiltration score (0.658). VPN/MFA reset with self-signed SSL confirms credential theft attack.
+D2453,Warning,0.78,High sender reputation (0.424) with urgent callback request and self-signed SSL. Clean attachment profile but SSL concerns require investigation.
+D2454,Malicious,0.90,Malicious file hash detected with high temporary email likelihood (0.424) and high metadata score (0.172). Multiple embedded files (4) confirm malware delivery.
+D2455,Warning,0.77,Link click request with failed SPF authentication and link rewritten through redirector. Clean attachment profile but authentication concerns require investigation.
+D2456,Malicious,0.92,Malicious attachment count (6) with executable attachment and high metadata score (0.183). Multiple suspicious processes confirm advanced attack.
+D2457,Malicious,0.93,Extremely high exfiltration score (0.874) with wire transfer request and unsubscribe link. High URL reputation score confirms sophisticated attack.
+D2458,No Action,0.84,Legitimate wire transfer communication with clean attachment profile and secure TLS 1.2 connection. Standard SPF authentication with valid SSL confirms authorized business correspondence.
+D2459,Malicious,0.89,High AMSI score (0.337) with gift card request and multiple suspicious processes including regsvr32.exe. Return path mismatch confirms targeted attack.
+D2460,No Action,0.83,Legitimate business communication with clean attachment profile and secure TLS 1.1 connection. Standard SPF/DKIM authentication confirms authorized correspondence.
+D2461,Malicious,0.91,Extremely high temporary email likelihood (0.903) with malicious file hash and high metadata score (0.533). Reply path known malicious confirms advanced threat.
+D2462,Warning,0.78,Invoice verification with expired SSL and failed SPF/DKIM/DMARC authentication. Clean attachment profile but multiple authentication failures require investigation.
+D2463,Malicious,0.88,High sender reputation (0.209) with high exfiltration score (0.451) and multiple suspicious processes. Failed DKIM authentication confirms sophisticated attack.
+D2464,Malicious,0.93,High AMSI score (0.347) with extremely high exfiltration score (0.941) and multiple suspicious processes. High content spam score (0.431) confirms advanced attack.
+D2465,Warning,0.80,High sender reputation (0.589) with wire transfer request and failed SPF/DKIM/DMARC. Clean attachment profile but authentication failures require investigation.
+D2466,Warning,0.79,High temporary email likelihood (0.108) with failed SPF/DKIM and URL shortener detected. High site visual similarity (0.639) requires investigation.
+D2467,Spam,0.83,High content spam score (0.719) with failed DMARC and multiple links (3). Clean attachment profile indicates bulk messaging spam.
+D2468,Spam,0.84,High return path reputation issues (0.499) with high content spam score (0.653) and failed SPF. Clean attachment profile indicates business context spam.
+D2469,Spam,0.82,Gift card request with expired SSL and failed DKIM/DMARC authentication. High site visual similarity (0.483) indicates spam campaign.
+D2470,Malicious,0.94,Sender spoofing detected with extremely high temporary email likelihood (0.815) and high AMSI score (0.731). High metadata score (0.302) with wire transfer confirms sophisticated attack.
+D2471,Malicious,0.88,Return path mismatch with high AMSI score (0.218) and high exfiltration score (0.278). Document download with expired SSL confirms targeted attack.
+D2472,No Action,0.85,Legitimate business communication with clean attachment profile and secure TLS 1.2 connection. Standard SPF authentication with valid SSL confirms authorized correspondence.
+D2473,Malicious,0.87,Sender marked malicious with high temporary email likelihood (0.439) and high content spam score (0.698). Sensitive data request with self-signed SSL confirms targeted attack.
+D2474,Malicious,0.92,Extremely high temporary email likelihood (0.982) with high exfiltration score (0.692) and return path known malicious. Meeting request confirms spear-phishing attack.
+D2475,Malicious,0.89,Multiple YARA matches (5) with high behavioral score (0.176) and high AMSI score (0.381). Multiple embedded files (2) confirm advanced attack.
+D2476,No Action,0.83,Legitimate business communication with clean attachment profile and secure TLS 1.1 connection. Standard authentication patterns confirm authorized correspondence.
+D2477,Malicious,0.90,Extremely high exfiltration score (0.699) with legal threat and network call on open. Self-signed SSL confirms targeted attack.
+D2478,Warning,0.80,High behavioral score (0.261) with link click request and high content spam score (0.367). Clean attachment profile but behavioral concerns require investigation.
+D2479,Spam,0.82,Bank detail update with self-signed SSL and high content spam score (0.184). Clean attachment profile indicates financial spam.
+D2480,Malicious,0.90,DMARC enforced with high temporary email likelihood (0.663) and high metadata score (0.365). VPN/MFA reset confirms credential theft attack.
+D2481,Malicious,0.91,High AMSI score (0.591) with high exfiltration score (0.683) and VPN/MFA reset. Multiple embedded files (2) confirm credential targeting attack.
+D2482,Malicious,0.94,Extremely high metadata score (0.712) with high behavioral score (0.612) and executable attachment. Extremely high content spam score (0.717) confirms advanced attack.
+D2483,No Action,0.85,Legitimate invoice verification with clean attachment profile and secure TLS 1.2 connection. Standard SPF/DKIM authentication confirms authorized business correspondence.  
+D2484,Malicious,0.91,Extremely high sender reputation (0.924) with multiple YARA matches (6) and high metadata score (0.086). Sophisticated attack using compromised account.
+D2485,Malicious,0.93,High temporary email likelihood (0.354) with YARA matches (2) and return path known malicious. Extremely high exfiltration score (0.904) confirms advanced attack.
+D2486,Spam,0.80,Wire transfer request with bulk message indicator and self-signed SSL. Failed SPF authentication indicates financial spam.
+D2487,No Action,0.84,Legitimate business communication with clean attachment profile and secure TLS 1.2 connection. Standard SPF/DKIM authentication confirms authorized correspondence.
+D2488,Warning,0.78,Self-signed SSL with multiple links (4) and failed SPF authentication. Clean attachment profile but SSL concerns require investigation.
+D2489,Warning,0.76,Failed DKIM/DMARC authentication with clean attachment profile and valid SSL. Authentication inconsistencies require investigation.
+D2490,Warning,0.79,Gift card request with revoked SSL certificate and URL shortener detected. Failed DKIM/DMARC requires investigation.
+D2491,Malicious,0.92,Sender spoofing with DMARC enforced and high AMSI score (0.722). High exfiltration score (0.587) with wire transfer confirms financial attack.
+D2492,Malicious,0.90,High exfiltration score (0.467) with document download and extremely high content spam score (0.945). Failed DMARC confirms sophisticated attack.
+D2493,No Action,0.86,Legitimate business communication with high sender reputation (0.431) and clean attachment profile. Valid SSL with secure TLS 1.1 connection confirms authorized correspondence.
+D2494,Warning,0.81,Sender marked malicious with high sender reputation (0.320) and sensitive data request. High content spam score (0.199) requires investigation.
+D2495,Malicious,0.94,High temporary email likelihood (0.687) with extremely high exfiltration score (0.943) and meeting request. User marked as spam confirms spear-phishing attack.
+D2496,Malicious,0.89,High metadata score (0.085) with high exfiltration score (0.572) and high content spam score (0.523). Multiple links (3) with URL shortener confirms advanced attack.
+D2497,No Action,0.82,Legitimate business communication with clean attachment profile and secure TLS 1.0 connection. Standard authentication patterns confirm authorized correspondence.
+D2498,Malicious,0.92,Extremely high sender reputation (0.678) with high exfiltration score (0.721) and legal threat. Compromised account confirms sophisticated attack.
+D2499,Malicious,0.95,Extremely high metadata score (0.782) with high AMSI score (0.364) and extremely high exfiltration score (0.854). Link click with URL redirect and high content spam score (0.746) confirms advanced phishing attack.
+D2500,Warning,0.82,Bank detail update with extremely high return path reputation issues (0.920) and revoked SSL certificate. High site visual similarity (0.261) requires investigation.
+D2501,Malicious,0.88,High temporary email likelihood (0.594) with high AMSI score (0.150) and VPN/MFA reset. YARA matches (2) with high URL rendering behavior (0.548) confirms credential theft attack.
+D2502,Spam,0.84,High sender reputation (0.205) with wire transfer request and bulk message indicator. High content spam score (0.284) with malicious QR code indicates financial spam.
+D2503,Malicious,0.96,Extremely high temporary email likelihood (0.913) with high metadata score (0.161) and high exfiltration score (0.682). Gift card request with multiple suspicious processes and expired SSL confirms sophisticated attack.
