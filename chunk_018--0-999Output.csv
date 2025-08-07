@@ -1,0 +1,51 @@
+Data ID,Classification,Confidence Score,Detailed Justification
+D851,Spam,0.81,High content spam score (0.65), no malicious indicators but temperror DMARC. Bulk spam message.
+D852,No Action,0.82,DMARC enforced with image only email but clean security profile. Legitimate communication with formatting issues.
+D853,No Action,0.84,Clean profile with good authentication and low threat scores. Legitimate email.
+D854,No Action,0.83,Gift card request but with clean security indicators and image only email. Likely legitimate gift card purchase.
+D855,Warning,0.77,Sender spoofing detected, wire transfer request, domain known malicious flag, failed all authentication. Potential BEC attempt.
+D856,Malicious,0.91,High behavioral sandbox score (0.72), document download request, YARA match, long sandbox execution time (163s). Advanced malware.
+D857,No Action,0.85,High URL reputation score (0.74), good authentication, clean threat profile. Legitimate communication.
+D858,No Action,0.80,Sensitive data request with domain known malicious flag but extremely low threat scores. False positive likely.
+D859,Malicious,0.89,Any_file_hash_malicious flag, VBScript/JavaScript detected, high exfiltration behavior (0.94), meeting request. Malware delivery.
+D860,Warning,0.79,High exfiltration behavior (0.89) but moderate other threat scores. Suspicious activity requiring investigation.
+D861,No Action,0.81,Clean profile despite SMTP reputation issues, failed DKIM but no malicious indicators. Configuration issues.
+D862,Malicious,0.92,High temporary email likelihood (0.67), high behavioral sandbox score (0.58), legal threat with outlook.exe, QR code present. Sophisticated phishing.
+D863,Malicious,0.88,High behavioral sandbox score (0.80), link click with acrobat.exe, reply path different from sender. PDF-based attack.
+D864,Spam,0.83,Bank detail update with high content spam score (0.72), SMTP geo risk (0.96). Financial fraud spam.
+D865,Malicious,0.90,High exfiltration behavior (0.86), VPN/MFA reset with powershell.exe, domain known malicious, failed DKIM. Credential theft attack.
+D866,No Action,0.79,Wire transfer request with certificate mismatch but clean threat profile. Configuration issue only.
+D867,Malicious,0.93,Extremely high behavioral sandbox score (0.79), very high AMSI score (0.83), gift card request with regsvr32.exe, final URL known malicious. Advanced malware attack.
+D868,Malicious,0.87,High temporary email likelihood (0.82), high behavioral sandbox score (0.65), excel.exe process, failed authentication. Data theft malware.
+D869,Malicious,0.91,High metadata score (0.60), extremely high AMSI score (0.93), network call on open, powershell.exe process. Sophisticated malware.
+D870,No Action,0.83,Invoice verification with clean security profile, good authentication. Legitimate business communication.
+D871,Warning,0.76,4 malicious attachments detected but low threat scores, self-signed SSL. Potential false positives or quarantined threats.
+D872,Malicious,0.86,High exfiltration behavior (0.92), regsvr32.exe suspicious process, failed authentication. Evasive malware.
+D873,No Action,0.82,Wire transfer request with clean threat profile and good authentication. Legitimate financial communication.
+D874,No Action,0.78,High temporary email likelihood (0.45) but clean security indicators. Possibly legitimate temporary account.
+D875,No Action,0.81,Failed authentication but clean threat profile with high SMTP geo risk (0.98). Geographic anomaly, not malicious.
+D876,No Action,0.85,Clean profile with good authentication despite failed SPF. Minor configuration issue.
+D877,Spam,0.82,High temporary email likelihood (0.58), gift card request, 5 URLs. Gift card scam spam.
+D878,Warning,0.74,Wire transfer request with moderate exfiltration behavior (0.63), failed authentication. Potential BEC attempt.
+D879,Malicious,0.88,High AMSI suspicion score (0.78), document download with exfiltration behavior (0.77). Document-based malware.
+D880,No Action,0.77,URL redirect chain but clean threat profile. Legitimate redirected link.
+D881,Spam,0.85,Sensitive data request with extremely high sender domain reputation issues (0.61), high content spam score (0.42). Data harvesting spam.
+D882,Malicious,0.94,Sender known malicious, high behavioral sandbox score (0.70), network call on open, meeting request. Spear phishing with malware.
+D883,Malicious,0.92,DMARC enforced with packer detected, high temporary email likelihood (0.60), SMTP geo risk (0.76), HTML ratio anomaly. Sophisticated attack bypassing DMARC.
+D884,Warning,0.73,6 URLs with URL shortener detected, self-signed SSL, high site visual similarity (0.88). Potential phishing but not confirmed.
+D885,Malicious,0.89,High metadata score (0.36), high exfiltration behavior (0.78), legal threat with outlook.exe, embedded file. Legal scam malware.
+D886,Malicious,0.90,High behavioral sandbox score (0.72), link click with acrobat.exe. PDF exploit attack.
+D887,No Action,0.76,Bank detail update with user marked as spam before but clean threat indicators. Previous spam sender now legitimate.
+D888,Warning,0.82,VPN/MFA reset with domain known malicious flag but low threat scores. Compromised domain or false positive.
+D889,Malicious,0.87,VPN/MFA reset with powershell.exe, high exfiltration behavior (0.51), embedded file. Credential theft malware.
+D890,Malicious,0.91,High exfiltration behavior (0.93), powershell.exe process, domain known malicious, embedded file. Advanced persistent threat.
+D891,Warning,0.75,Invoice verification with smtp_ip_known_malicious flag, 7 URLs, self-signed SSL. Suspicious infrastructure.
+D892,Malicious,0.93,Extremely high metadata score (0.72), extremely high behavioral sandbox score (0.89), high exfiltration behavior (0.97), expired SSL. Sophisticated malware campaign.
+D893,Warning,0.81,High behavioral sandbox score (0.40), YARA match, regsvr32.exe process, domain known malicious. Multiple risk indicators.
+D894,Spam,0.86,Extremely high temporary email likelihood (0.92), wire transfer request. Classic wire transfer scam.
+D895,Warning,0.72,Sender spoofing detected with multiple known malicious flags but low threat scores. Compromised or spoofed sender.
+D896,No Action,0.84,Clean profile with good authentication and low threat scores. Legitimate communication.
+D897,Warning,0.77,Self-signed SSL certificate with moderate temporary email likelihood but high URL reputation score (0.47). Mixed signals.
+D898,Spam,0.84,Gift card request with extremely high sender domain reputation issues (0.67), softfail SPF. Gift card scam.
+D899,Malicious,0.89,High AMSI score (0.64), wire transfer request with exfiltration behavior (0.61), unsubscribe link present, high URL reputation issues (0.83). BEC attack with malware.
+D900,Warning,0.80,Macro-enabled document, document download request, expired SSL certificate, but moderate threat scores. Suspicious document requiring analysis.

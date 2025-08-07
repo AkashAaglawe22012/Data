@@ -1,0 +1,51 @@
+Data ID,Classification,Confidence Score,Detailed Justification
+D951,No Action,0.81,High temporary email likelihood (0.65) but clean security profile. Authentication passed SPF, no malicious indicators. Legitimate temporary account usage.
+D952,Warning,0.77,Legal threat with outlook.exe process, moderate metadata score (0.55), high AMSI score (0.41), failed authentication but low overall threat scores. Potential legal scam requiring investigation.
+D953,Malicious,0.87,Any file hash malicious flag, link click with acrobat.exe, high AMSI score (0.08), high exfiltration behavior (0.13), certificate mismatch. PDF-based malware attack.
+D954,Spam,0.84,Bank detail update with high content spam score (0.55), sender known malicious flag. Banking fraud spam campaign.
+D955,Malicious,0.89,VPN/MFA reset with winword.exe and powershell.exe processes, extremely high temporary email likelihood (0.91), very high exfiltration behavior (0.74). Credential theft attack.
+D956,No Action,0.78,Wire transfer request with DMARC enforced and URL shortener but clean threat profile. Legitimate financial communication with redirected links.
+D957,Warning,0.82,Gift card request with executable attachment, 5 YARA matches, winword.exe/powershell.exe/regsvr32.exe processes, high content spam score (0.48) but low threat scores. Suspicious multi-process activity.
+D958,No Action,0.84,Clean security profile with good authentication, low threat scores despite moderate metadata score (0.13) and exfiltration behavior (0.40). Certificate mismatch likely configuration issue.
+D959,Warning,0.76,Moderate behavioral sandbox score (0.07), winword.exe/powershell.exe processes, low AMSI score but expired SSL and failed authentication. Potential early-stage attack.
+D960,No Action,0.80,Clean security profile with failed authentication but no malicious indicators. Invoice verification request appears legitimate.
+D961,Malicious,0.92,Extremely high metadata score (0.84), high AMSI score (0.18), 2 YARA matches, winword.exe/powershell.exe processes, very high exfiltration behavior (0.68). Sophisticated document-based malware.
+D962,Malicious,0.88,Executable attachment, high AMSI score (0.19), winword.exe/powershell.exe/regsvr32.exe processes, extremely high exfiltration behavior (0.89). Multi-stage malware attack.
+D963,No Action,0.83,Wire transfer request with failed authentication but clean threat profile. Legitimate financial communication with configuration issues.
+D964,No Action,0.82,Clean security profile with minimal threat scores. Configuration issues with authentication but no malicious indicators.
+D965,No Action,0.79,Marketing keywords detected, self-signed SSL certificate but clean threat profile. Internal system communication.
+D966,No Action,0.77,Clean security profile with failed authentication. Configuration issues only, no malicious indicators.
+D967,No Action,0.78,Return path known malicious flag but gift card request with clean threat profile. False positive on malicious flag likely.
+D968,Warning,0.81,Wire transfer request with high behavioral sandbox score (0.23), 1 YARA match, winword.exe process, SMTP geo risk (0.52). Potential BEC attempt with suspicious activity.
+D969,Warning,0.85,Document download with unscannable attachment, high metadata score (0.54), high behavioral sandbox score (0.34), moderate exfiltration behavior (0.66), expired SSL. Suspicious document requiring analysis.
+D970,No Action,0.79,Clean threat profile with expired SSL and temperror DMARC. Configuration issues only.
+D971,No Action,0.81,Sensitive data request with certificate mismatch but clean threat profile. Configuration issue, not malicious.
+D972,Malicious,0.87,Meeting request with exploit pattern detected, extremely high exfiltration behavior (0.97). Spear phishing with malware payload.
+D973,Warning,0.80,High-risk role targeted, moderate behavioral sandbox score (0.04), AMSI score (0.001), winword.exe process. Potential targeted attack with low signatures.
+D974,No Action,0.83,Clean security profile with good authentication despite temperror DMARC. Configuration issue only.
+D975,Warning,0.83,Legal threat with 1 YARA match, 6 IOC counts, outlook.exe process, high content spam score (0.75), high-risk role targeted. Potential legal scam requiring investigation.
+D976,Malicious,0.90,High metadata score (0.23), extremely high AMSI score (0.89), link click with acrobat.exe, URL shortener detected, moderate exfiltration behavior (0.27). PDF exploit attack.
+D977,No Action,0.79,Bank detail update with high temporary email likelihood (0.23) but clean threat profile. Legitimate banking communication from temporary account.
+D978,Malicious,0.91,VPN/MFA reset with executable attachment, extremely high metadata score (0.78), high behavioral sandbox score (0.24), winword.exe/powershell.exe processes, high exfiltration behavior (0.59). Advanced credential theft malware.
+D979,Malicious,0.88,VPN/MFA reset with extremely high metadata score (0.73), winword.exe/powershell.exe processes, high exfiltration behavior (0.37), high URL reputation issues (0.65). Credential theft attack.
+D980,Warning,0.77,Moderate exfiltration behavior (0.39), winword.exe/powershell.exe processes but low other threat scores. Suspicious process activity requiring investigation.
+D981,No Action,0.82,Invoice verification with high URL reputation issues (0.53) but clean threat profile. Configuration or reputation issue, not malicious.
+D982,Warning,0.78,Moderate exfiltration behavior (0.44), winword.exe/powershell.exe processes, moderate URL reputation issues (0.22) but low threat scores. Suspicious activity requiring investigation.
+D983,Malicious,0.86,High metadata score (0.58), HTML ratio anomaly (1.1), winword.exe/powershell.exe/regsvr32.exe processes, high exfiltration behavior (0.64), high content spam score (0.61), QR code present. Multi-vector attack.
+D984,No Action,0.80,Wire transfer request with extremely high temporary email likelihood (0.73) but clean threat profile. Legitimate transaction from temporary account.
+D985,No Action,0.83,Clean security profile with minimal threat scores despite SMTP reputation issues. Configuration issue only.
+D986,Spam,0.85,Extremely high content spam score (0.80), self-signed SSL certificate. Bulk spam message.
+D987,No Action,0.81,High-risk role targeted with clean threat profile. Legitimate targeted communication.
+D988,No Action,0.79,Gift card request with high-risk role targeted but clean security indicators. Legitimate gift card purchase request.
+D989,Malicious,0.94,Extremely high behavioral sandbox score (0.995), very high AMSI score (0.81), VBScript/JavaScript detected, wire transfer request, winword.exe process, high exfiltration behavior (0.42). Advanced BEC malware.
+D990,Warning,0.82,Document download with extremely high return path reputation issues (0.94), high content spam score (0.64), winword.exe process. Suspicious document with reputation concerns.
+D991,No Action,0.77,Extremely high temporary email likelihood (0.95) with final URL known malicious flag but clean threat profile. Temporary account with false positive flag.
+D992,Warning,0.84,Sensitive data request with 5 URLs, extremely high URL reputation issues (0.86), temperror DMARC. Data harvesting attempt with suspicious links.
+D993,Warning,0.81,Meeting request with extremely high temporary email likelihood (0.89), high metadata score (0.54), high exfiltration behavior (0.51), winword.exe process. Suspicious meeting invite requiring investigation.
+D994,Warning,0.85,Extremely high metadata score (0.91), 4 YARA matches, high AMSI score (0.65), winword.exe process, high sender domain reputation issues (0.73). Multiple suspicious indicators requiring analysis.
+D995,No Action,0.78,High temporary email likelihood (0.19) but clean threat profile with minimal scores. Legitimate temporary account usage.
+D996,Warning,0.83,Legal threat with high metadata score (0.22), AMSI score (0.22), outlook.exe process, moderate exfiltration behavior (0.50). Potential legal scam requiring investigation.
+D997,Warning,0.84,Link click with high behavioral sandbox score (0.39), acrobat.exe process, return path known malicious, extremely high URL reputation issues (0.79), image only email. PDF-based phishing attempt.
+D998,No Action,0.82,Bank detail update with high SMTP geo risk (0.69) but clean threat profile. Geographic anomaly, not malicious.
+D999,Malicious,0.87,VPN/MFA reset with 2 malicious attachments, high behavioral sandbox score (0.22), winword.exe/powershell.exe processes, return path known malicious, moderate exfiltration behavior (0.51). Credential theft malware with attachments.
+D1000,No Action,0.83,Sensitive data request with extremely high URL reputation issues (0.84) but clean threat profile. Reputation issue, not malicious activity.

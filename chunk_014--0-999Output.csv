@@ -1,0 +1,51 @@
+Data ID,Classification,Confidence Score,Detailed Justification
+D651,No Action,0.90,Email appears legitimate with good authentication (SPF/DKIM pass), no malicious indicators, clean attachments, and appropriate security features. The low domain reputation score is compensated by other positive signals.
+D652,Warning,0.75,Sender spoofing detected with high temporary email likelihood (0.72). Contains winword.exe parent process and high AMSI score (0.88). Meeting request with moderate risk indicators warrant caution but not immediate blocking.
+D653,Spam,0.85,Contains malicious attachment with executable present, failed SPF/DKIM, and suspicious winword.exe process. Low sender reputation with moderate behavioral scores indicate spam with potential malicious intent.
+D654,No Action,0.92,Clean email with no malicious indicators, good authentication (except DKIM), no attachments, and legitimate URL behavior. Low risk profile across all signals.
+D655,Malicious,0.88,High threat indicators: executable attachment, very high sandbox execution score (0.93), suspicious outlook.exe process, failed SPF, and legal threat request type. Multiple red flags indicate malicious phishing attempt.
+D656,Malicious,0.91,Extreme risk: high suspicious metadata (0.52), elevated behavioral sandbox score, suspicious acrobat.exe process, self-signed SSL certificate, failed SPF, and link click request. Clear malicious intent.
+D657,Warning,0.70,Elevated risk with sender reputation issues, failed SPF, expired SSL certificate, URL redirect chain, and bank detail update request. Potential BEC attack but lacks strong malicious indicators.
+D658,Malicious,0.95,Very high threat: 8 IOC counts, high behavioral scores (0.82 exfiltration), powershell.exe process detected, VPN/MFA reset request, and suspicious network behavior. Clear credential theft attempt.
+D659,Malicious,0.93,Extreme malicious indicators: max metadata score (0.97), high behavioral sandbox score (0.43), powershell.exe process, failed DMARC, VPN/MFA reset request. Sophisticated attack attempt.
+D660,Warning,0.78,Mixed signals: sender known malicious flag but with macros present, SSL issues, and suspicious processes. However, bulk indicator suggests possible false positive on malicious sender flag.
+D661,No Action,0.88,Clean profile with good authentication, no attachments, invoice verification request seems legitimate given other clean signals. Low risk overall.
+D662,Malicious,0.89,High risk indicators: suspicious metadata (0.28), exfiltration behavior (0.94), powershell.exe process, failed SPF, embedded files detected. Clear data theft attempt.
+D663,Warning,0.72,Moderate risk with suspicious processes including regsvr32.exe, failed DMARC, but low overall threat scores. Potential early-stage attack or suspicious activity.
+D664,Spam,0.80,Wire transfer request with failed SPF/DKIM, moderate SMTP reputation issues. Classic spam pattern for financial fraud attempt but lacks sophisticated malicious indicators.
+D665,No Action,0.85,Despite some authentication issues, overall clean profile with no attachments, low threat scores, and appropriate security signals. Likely legitimate email.
+D666,No Action,0.90,Very clean profile with good authentication, domain known malicious flag appears false positive given all other clean signals. Legitimate email.
+D667,No Action,0.87,Good overall security profile despite failed SPF, no malicious indicators, clean attachments. Authentication issues likely configuration related.
+D668,Warning,0.73,Gift card request with some URL issues but overall moderate risk. Social engineering attempt but not technically malicious.
+D669,Warning,0.76,Wire transfer request with moderate behavioral scores, winword.exe process, but passed SPF. BEC attempt with moderate sophistication.
+D670,Malicious,0.85,High risk: document download request with failed authentication, suspicious processes, domain reputation issues, and multiple embedded files. Malware delivery attempt.
+D671,No Action,0.89,Clean profile with good authentication, unsubscribe link present suggesting legitimate marketing, no malicious indicators.
+D672,Spam,0.82,Sensitive data request with authentication issues, suspicious URL behavior, and spam-like characteristics. Phishing attempt via spam campaign.
+D673,Warning,0.74,Meeting request with suspicious behavioral scores, winword.exe process, but otherwise moderate risk. Potential spear phishing but not definitively malicious.
+D674,Malicious,0.87,High behavioral sandbox score (0.51), suspicious metadata (0.46), failed authentication, expired SSL certificate. Clear malicious intent.
+D675,No Action,0.86,Clean profile with passed authentication, no malicious indicators despite some minor reputation scores. Legitimate email.
+D676,Malicious,0.90,Legal threat with suspicious processes, high exfiltration score (0.78), self-signed SSL, failed DMARC. Classic malicious legal scam.
+D677,Malicious,0.92,Extremely high metadata score (0.74), link click request with acrobat.exe process, failed SPF/DKIM. Sophisticated phishing attack.
+D678,Spam,0.79,Bank detail update request with moderate sender reputation issues, failed DMARC. Financial fraud spam attempt.
+D679,Malicious,0.88,Network call on open detected, high exfiltration score (0.83), powershell.exe process, VPN/MFA reset request. Credential theft malware.
+D680,No Action,0.84,Wire transfer request but with good authentication and low threat scores. Appears to be legitimate business communication.
+D681,Malicious,0.94,Exploitation pattern detected, extreme metadata score (0.66), max exfiltration score (0.999), gift card request. Highly sophisticated attack.
+D682,Malicious,0.91,Return path known malicious, high behavioral scores, embedded files, excel.exe process. Advanced persistent threat indicators.
+D683,Warning,0.77,Sender spoofing detected with authentication failures, self-signed SSL, but low malicious scores. Suspicious but not definitively malicious.
+D684,No Action,0.83,Despite high temporary email likelihood, overall clean profile with no malicious indicators. Possibly legitimate temporary account usage.
+D685,Malicious,0.86,High sender reputation issues, suspicious processes, self-signed SSL certificate, behavioral indicators. Phishing attack attempt.
+D686,Malicious,0.89,High behavioral scores, multiple suspicious processes including regsvr32.exe, self-signed SSL, exfiltration behavior. Malware delivery.
+D687,No Action,0.88,Wire transfer request but with excellent authentication and security profile. Legitimate business transaction.
+D688,Warning,0.71,Packer detected flag but otherwise clean profile. Possible false positive or low-risk executable attachment.
+D689,No Action,0.86,Good security profile with multiple URLs but all validated. Legitimate communication with links.
+D690,Warning,0.75,High temporary email likelihood with reply path differences, but otherwise moderate risk. Suspicious sender behavior.
+D691,Spam,0.81,Gift card request with bulk indicator, self-signed SSL, no DKIM. Classic spam pattern for gift card scam.
+D692,Malicious,0.87,Macro-enabled document, wire transfer request, high content spam score, suspicious processes. Business email compromise attempt.
+D693,Warning,0.76,Document download request with has_executable_attachment flag and domain known malicious, but low threat scores. Moderate risk.
+D694,No Action,0.85,Return path known malicious flag appears false positive given all other clean signals. Legitimate email.
+D695,Warning,0.72,Sensitive data request with reply path difference and unsubscribe link mismatch. Potential phishing but not confirmed.
+D696,Malicious,0.90,Extremely high sender reputation issues (0.68), executable attachment, meeting request with failed authentication. Spear phishing malware.
+D697,Malicious,0.92,Both sender and return path known malicious, failed DMARC, suspicious processes. Confirmed malicious source.
+D698,No Action,0.87,Despite some minor issues, overall clean profile with good authentication and no malicious indicators.
+D699,Warning,0.79,Legal threat with self-signed SSL certificate and authentication issues, but low malicious scores. Potential scam attempt.
+D700,Malicious,0.93,Packer detected, high metadata score (0.48), acrobat.exe process, link click request with SSL issues. Sophisticated malware delivery.
